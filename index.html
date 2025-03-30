@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>March Madness Style Bracket</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+    <header>
+        <h1>March Madness Style Bracket</h1>
+    </header>
+    
+    <main>
+        <div id="bracket-container" class="bracket-container">
+            <!-- Bracket will be rendered here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>Bracket Updated: <span id="last-updated">Loading...</span></p>
+    </footer>
+
+    <!-- Firebase config and initialization -->
+    <script src="firebase-config.js"></script>
+    <!-- Bracket display script -->
+    <script src="bracket.js"></script>
+</body>
+</html>
