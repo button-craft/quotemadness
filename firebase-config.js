@@ -1,6 +1,5 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-
+// firebase-config.js
+// Initialize Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyDZoRMLZhhK1E7dAjekeMsvKU5F5cbvQSc",
   authDomain: "quote-madness.firebaseapp.com",
@@ -12,7 +11,9 @@ const firebaseConfig = {
 };
 
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
 
-export { db };
+// Make db available globally
+window.db = db; // Add this line
