@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bracket Admin</title>
+    <link rel="stylesheet" href="admin-styles.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Bracket Admin Panel</h1>
+    </header>
+    
+    <main>
+        <div class="admin-controls">
+            <button id="init-button" class="btn primary">Initialize Bracket</button>
+            <div class="reset-buttons">
+                <button id="reset-round4" class="btn warning">Reset Round 4</button>
+                <button id="reset-round5" class="btn warning">Reset Round 5</button>
+                <button id="reset-round6" class="btn warning">Reset Championship</button>
+            </div>
+        </div>
+        
+        <div id="message" class="message hidden"></div>
+        
+        <div id="admin-bracket" class="admin-bracket">
+            <!-- Admin bracket will be rendered here -->
+        </div>
+    </main>
+
+    <!-- Firebase config and initialization -->
+    <script src="firebase-config.js"></script>
+    <!-- Admin script -->
+    <script src="admin.js"></script>
+</body>
+</html>
